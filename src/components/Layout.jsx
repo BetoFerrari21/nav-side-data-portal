@@ -6,10 +6,10 @@ const Layout = () => {
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
 
   const navItems = [
-    { icon: BarChart3, label: 'Dashboard', path: '/' },
-    { icon: Users, label: 'Team', path: '/team' },
-    { icon: FileText, label: 'Reports', path: '/reports' },
-    { icon: Settings, label: 'Settings', path: '/settings' },
+    { icon: BarChart3, label: 'Painel', path: '/' },
+    { icon: Users, label: 'Equipe', path: '/team' },
+    { icon: FileText, label: 'Relatórios', path: '/reports' },
+    { icon: Settings, label: 'Configurações', path: '/settings' },
   ];
 
   return (
@@ -34,9 +34,9 @@ const Layout = () => {
             <button onClick={() => setSidebarOpen(!sidebarOpen)} className="text-gray-500 focus:outline-none focus:text-gray-700 md:hidden">
               <Menu className="h-6 w-6" />
             </button>
-            <h1 className="text-xl font-semibold">Startup Dashboard</h1>
+            <h1 className="text-xl font-semibold">Painel da Startup</h1>
             <div className="flex items-center">
-              <img className="h-8 w-8 rounded-full object-cover" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="User avatar" />
+              <img className="h-8 w-8 rounded-full object-cover" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Avatar do usuário" />
             </div>
           </div>
         </header>
