@@ -1,5 +1,6 @@
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import FacebookAdSearch from '../components/FacebookAdSearch';
 
 const Dashboard = () => {
   const barChartData = [
@@ -23,6 +24,8 @@ const Dashboard = () => {
   return (
     <div className="space-y-6">
       <h2 className="text-2xl font-semibold mb-4">Visão Geral do Painel</h2>
+      
+      <FacebookAdSearch />
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-white p-6 rounded-lg shadow">
