@@ -9,11 +9,11 @@ const FacebookAdSearch = () => {
   const [searchResults, setSearchResults] = useState([]);
 
   const handleSearch = (category) => {
-    // Simular uma busca (substitua isso por uma chamada API real)
+    // Simular uma busca baseada na palavra-chave e categoria
     const fakeResults = [
-      { id: 1, title: `Anúncio ${category} 1`, description: 'Descrição do anúncio 1' },
-      { id: 2, title: `Anúncio ${category} 2`, description: 'Descrição do anúncio 2' },
-      { id: 3, title: `Anúncio ${category} 3`, description: 'Descrição do anúncio 3' },
+      { id: 1, title: `Anúncio ${category} para "${searchTerm}" 1`, description: `Descrição do anúncio relacionado a "${searchTerm}"` },
+      { id: 2, title: `Anúncio ${category} para "${searchTerm}" 2`, description: `Outro anúncio sobre "${searchTerm}"` },
+      { id: 3, title: `Anúncio ${category} para "${searchTerm}" 3`, description: `Mais um anúncio relacionado a "${searchTerm}"` },
     ];
     setSearchResults(fakeResults);
   };
@@ -24,7 +24,7 @@ const FacebookAdSearch = () => {
       <div className="flex mb-4">
         <Input
           type="text"
-          placeholder="Buscar anúncios..."
+          placeholder="Digite uma palavra-chave..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="flex-grow mr-2"
