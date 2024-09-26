@@ -1,21 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
-import Dashboard from "./pages/Dashboard";
-import Team from "./pages/Team";
-import Reports from "./pages/Reports";
-import Settings from "./pages/Settings";
+import React from 'react';
 
-const App = () => (
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Dashboard />} />
-        <Route path="team" element={<Team />} />
-        <Route path="reports" element={<Reports />} />
-        <Route path="settings" element={<Settings />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
-);
+function App() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold mb-4">Bem-vindo ao seu novo projeto</h1>
+        <p className="text-xl text-gray-600">Comece a construir algo incrível!</p>
+      </div>
+    </div>
+  );
+}
 
 export default App;
