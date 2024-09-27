@@ -9,6 +9,7 @@ import Sales from './pages/Sales';
 import Customers from './pages/Customers';
 import Affiliates from './pages/Affiliates';
 import Settings from './pages/Settings';
+import Financeiro from './pages/Financeiro';
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ function App() {
                   <Route path="/customers" element={<Customers />} />
                   <Route path="/affiliates" element={<Affiliates />} />
                   <Route path="/settings" element={<Settings />} />
+                  <Route path="/financeiro" element={<Financeiro />} />
                 </Routes>
               </div>
             </main>
