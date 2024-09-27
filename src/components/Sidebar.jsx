@@ -25,7 +25,7 @@ const Sidebar = () => {
         <Layers className="h-8 w-8" />
         <span className="text-2xl font-extrabold">Zpixpay</span>
       </Link>
-      <nav className="space-y-1">
+      <nav className="space-y-1 overflow-y-auto max-h-[calc(100vh-100px)] scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
         {menuItems.map((item) => (
           <Link
             key={item.name}
