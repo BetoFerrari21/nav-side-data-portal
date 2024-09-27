@@ -31,6 +31,8 @@ const Financeiro = () => {
         </button>
       </div>
       
+      <p className="text-gray-600 mb-6">Aqui você poderá gerenciar seus produtos.</p>
+      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <FinanceBlock 
           title="Saldo disponível" 
