@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Download, CreditCard, Bank, Percent, UserCheck } from 'lucide-react';
+import { ArrowRight, Download, CreditCard, Building, Percent, UserCheck } from 'lucide-react';
 
 const FinanceBlock = ({ title, value, subtitle }) => (
   <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -49,7 +49,7 @@ const Financeiro = () => {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
         <div className="space-y-3">
           <ActionLink href="/saques" icon={CreditCard}>Saques</ActionLink>
-          <ActionLink href="/dados-bancarios" icon={Bank}>Dados bancários</ActionLink>
+          <ActionLink href="/dados-bancarios" icon={Building}>Dados bancários</ActionLink>
           <ActionLink href="/taxas" icon={Percent}>Taxas</ActionLink>
           <ActionLink href="/identidade" icon={UserCheck}>Identidade</ActionLink>
         </div>
